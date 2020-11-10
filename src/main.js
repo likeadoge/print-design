@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import '@/style/_index.scss'
-import MarkdownBody from './components/MarkdownBody.vue'
+import ArticleContent from './components/ArticleContent.vue'
 
 
 const app =  createApp(App)
-app.component('MarkdownBody',MarkdownBody)
+app.component('ArticleContent',ArticleContent)
 
 
 app.mount('#app')
