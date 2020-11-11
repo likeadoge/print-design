@@ -1,16 +1,16 @@
 <template>
     <globe-header />
     <article-page />
-    <sider-bar />
+    <doc-catalogue />
 </template>
 
 <script>
 import GlobeHeader from './GlobeHeader.vue'
 import ArticlePage from './ArticlePage.vue'
-import SiderBar from './SiderBar.vue'
+import DocCatalogue from './DocCatalogue.vue'
 
 export default {
-    components:{GlobeHeader,ArticlePage,SiderBar},
+    components:{GlobeHeader,ArticlePage,DocCatalogue},
 }
 </script>
 

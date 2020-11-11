@@ -7,18 +7,22 @@
 
 <style lang="scss" scoped>
     .globe_header{
-        height: 72px;line-height: 72px;
+        height: $header-height;
+        line-height: $header-height;
         position: fixed;
         top: 0; left: 0;right:0;
-        padding:0 48px;
+        padding:0 $header-padding;
+        background: $bg-color;
     
         h1 {
-            height: 72px;line-height: 72px;
-        border-bottom: 1px solid #999;
+            height: $header-height;
+            line-height: $header-height;
+            border-bottom: 1px solid #999;
         }    
 
         +.globe_header-placehoder{
-          height: 72px;line-height: 72px;
+          height: $header-height;
+          line-height: $header-height;
         }
     }
 </style>

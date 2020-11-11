@@ -16,22 +16,7 @@ export default {
 
 
 <style lang="scss">
-body{
-    background: #f7f6f0; ;
-}
 
-
-*::-webkit-scrollbar,
-*::-webkit-scrollbar-thumb {
-  width: 18px;
-  border-radius: 13px;
-  background-clip: padding-box;
-  border: 8px solid transparent;
-}
-
-*::-webkit-scrollbar-thumb {        
-  box-shadow: inset 0 0 0 4px rgba(0,0,0,0.4);
-}
 
 
 // ::-webkit-scrollbar-track
