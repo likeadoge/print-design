@@ -2,6 +2,9 @@ body{
     background-color: $bg-color; 
 }
 
+a{
+  text-decoration: none;
+}
 
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
