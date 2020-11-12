@@ -10,7 +10,7 @@
         height: $header-height;
         line-height: $header-height;
         position: fixed;
-        top: 0; left: 0;right:0;
+        top: 0; left: $catalogue-width;right:0;
         padding:0 $header-padding;
         background: $bg-color;
     

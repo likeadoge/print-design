@@ -21,13 +21,17 @@ export default {
 <style lang="scss">
 
 body{
-    padding-left: 328px!important;
+    padding-left: $catalogue-width!important;
 }
 
+</style>
+
+<style lang="scss" scoped>
+
 .catalogue{
-    width: 328px;
+    width:  $catalogue-width;
     padding-left: 72px;
-    top: 72px;
+    top: 0;
     bottom: 0;
     left:0;
     background: $bg-color;
