@@ -60,7 +60,7 @@ body{
     left:0;
     background: $bg-color;
     position: fixed;
-    padding:32px 0;
+    padding:24px 0;
 
 
     >.chapter-cntr{

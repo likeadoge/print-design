@@ -1,8 +1,12 @@
 <template>
-    <header class="globe_header"><h1>纸感设计</h1></header>
+    <header class="globe_header"><h1>{{title}} - {{doc?doc.title:''}}</h1></header>
     <div class="globe_header-placehoder"></div>
 </template>
-
+<script>
+export default {
+    props:['title','doc']
+}
+</script>
 
 
 <style lang="scss" scoped>

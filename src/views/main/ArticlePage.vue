@@ -1,16 +1,12 @@
 <template>
     <div class="article">
-        <article-content :content='content' />
+        <article-content v-if="doc && doc.content" :content='doc.content' />
     </div>
 </template>
 
 <script>
-import content from '@/docs/test'
-
 export default {
-    data(){
-        return {content}
-    }
+    props:['doc']
 }
 </script>
 
