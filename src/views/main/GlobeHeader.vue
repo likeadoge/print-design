@@ -75,7 +75,8 @@ export default {
                 margin: 0 auto;
 
                 > div{
-                   transform: scale(2);
+                    transform-origin: left;
+                    transform: scale(2);
                 }
                 transform-origin: left;
                 
