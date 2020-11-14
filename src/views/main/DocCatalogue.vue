@@ -58,7 +58,8 @@ body{
     top: 0;
     bottom: 0;
     left:0;
-    background: $bg-color;
+    background: $catalogue-bg;
+    color: $catalogue-color;
     position: fixed;
     padding:24px 0;
 
@@ -66,7 +67,6 @@ body{
     >.chapter-cntr{
         height: 100%;
         overflow: auto;
-        border-right: 1px solid #999;
         padding-left: $header-padding;
 
         
@@ -80,30 +80,32 @@ body{
 
         .chapter_focus{
            .chapter-title{
-                color: #A8497A;
+                color:  $red-light;
            } 
         }
 
         .doc-link{
             cursor: pointer;
             transition: all 0.3s ease-out;
+            opacity: 0.8;
 
             &:not(.doc-link_focus):not(.doc-link_disabled):hover{
-                color: #A8497A;
+                color: $red-light;
                 text-shadow:  4px 4px 0   rgba(168,73,122,0.2);
             }
             &.doc-link_focus{
-                color: #A8497A;
+                color: $red-light;
                 font-weight: bold;
                 
                 &:hover{
-                    color: #A8497A;
+                    color: $red-light;
                     text-shadow: none;
                 }
             }
             
             &.doc-link_disabled{
-                opacity: 0.5;
+                opacity: 0.3;
+                text-decoration: line-through;
                 &:hover{
                     color: inherit;
                     text-shadow: none;

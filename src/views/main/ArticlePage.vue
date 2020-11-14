@@ -14,5 +14,6 @@ export default {
 <style lang="scss" scoped>
 .article{
     width: 840px;padding: 80px 40px;margin: 0 auto;
+    overflow: auto;
 }
 </style>

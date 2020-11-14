@@ -8,6 +8,11 @@ html, body {
   height: 100%;
 }
 
+
+*{
+  box-sizing: border-box;
+}
+
 body {
   position: relative; // Required by scrollspy
   font-family: $font-family-base;
@@ -50,7 +55,7 @@ h2, h3, h4, h5, h6 { margin: 20px 0 15px; }
 p { margin: 0 0 20px 0; }
 
 a , a:active {
-  color: $link-color;
+  // color: $link-color;
   text-decoration: none;
   outline: none;
   word-wrap: break-word;

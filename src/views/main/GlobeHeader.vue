@@ -5,7 +5,11 @@
         'globe_header':true,
         'globe_header_fixed': isFixed
     }"><div class="globe_header-content">
-        <h1 :class="{h1_small:h1Small}"><span v-show="h1Small" class="chapter-title">{{title}} - </span> {{doc?doc.title:''}}</h1>
+        <h1 :class="{h1_small:h1Small}">
+            <div style="float:left">
+                <span v-show="h1Small" class="chapter-title">{{title}} - </span> {{doc?doc.title:''}}
+            </div>
+        </h1>
     </div></header>
     <div ref="pl" class="globe_header-placehoder"></div>
 </template>
@@ -69,12 +73,18 @@ export default {
             >h1{
                 width: $content-width;
                 margin: 0 auto;
-                transform: scale(2);
-                transform-origin: left;
-                &.h1_small{
 
+                > div{
+                   transform: scale(2);
+                }
+                transform-origin: left;
+                
+                
+                &.h1_small{
+                    >div{
+                    transform: scale(1);
+                    }
                     line-height: $header-fixed-height;
-                    transform: scale(1)!important;
                 }
             }
         
