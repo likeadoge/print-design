@@ -69,6 +69,14 @@ body{
         border-right: 1px solid #999;
         padding-left: $header-padding;
 
+        
+        .chapter {
+            overflow: hidden;
+        }
+        .chapter > div{
+            overflow: hidden;
+            position: relative;
+        }
 
         .chapter_focus{
            .chapter-title{
