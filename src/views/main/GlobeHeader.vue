@@ -40,14 +40,14 @@ export default {
 
     $header-expanded-height : 256px;
     $header-fixed-height : 72px;
-    $content-width:760px;
-
 
     .globe_header{
         
         height: $header-expanded-height;
         position: absolute;
-        top: 0; left: $catalogue-width;right:0;
+        top: 0; 
+        left: $catalogue-width;
+        right:0;
         padding:0 $header-padding;
         background: $bg-color;
 
@@ -71,7 +71,7 @@ export default {
             border-bottom: 1px solid #999;
 
             >h1{
-                width: $content-width;
+                max-width: $content-width - 2 * $content-padding-hor ;
                 margin: 0 auto;
 
                 > div{

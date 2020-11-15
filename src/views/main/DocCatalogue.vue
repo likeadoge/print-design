@@ -87,7 +87,6 @@ body{
         .doc-link{
             cursor: pointer;
             transition: all 0.3s ease-out;
-            opacity: 0.8;
 
             &:not(.doc-link_focus):not(.doc-link_disabled):hover{
                 color: $red-light;
