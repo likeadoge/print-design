@@ -42,11 +42,18 @@ export default {
     $header-fixed-height : 72px;
 
     .globe_header{
+
+        @media  (min-width: $xl) {
+            
+           &{ left: $catalogue-width;}
+        }
+
         
         height: $header-expanded-height;
         position: absolute;
         top: 0; 
-        left: $catalogue-width;
+        
+        left: 0;
         right:0;
         padding:0 $header-padding;
         background: $bg-color;
@@ -83,7 +90,7 @@ export default {
                 
                 &.h1_small{
                     >div{
-                    transform: scale(1);
+                        transform: scale(1);
                     }
                     line-height: $header-fixed-height;
                 }

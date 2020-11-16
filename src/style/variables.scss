@@ -45,7 +45,7 @@ $text-color : $dark1;
 
 // header
 
-$header-padding : 40px;
+$header-padding : 72px;
 $header-height : 72px;
 
 
@@ -56,4 +56,11 @@ $catalogue-color :$light1;
 
 // content
 $content-width: 860px;
-$content-padding-hor: 40px;
+$content-padding-hor: 72px;
+
+//Responsive layout
+$sm : 576px;
+$md : 768px;
+$lg : 992px;
+$xl : 1200px;
+$xxl : 1600px;
