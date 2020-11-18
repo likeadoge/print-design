@@ -1,5 +1,5 @@
 
-import introduction from './introduction.js'
+import introduction from './Introduction'
 
 export default     {
     title:'Paper System',
