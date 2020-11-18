@@ -1,16 +1,7 @@
-import content from './test'
+import system from './system/_index'
 
 export default [
-    {
-        title:'Paper System',
-        list:[
-            {title:'概述',content:[content[0]]},
-            {title:'环境',content:[content[1]]},
-            {title:'材料属性',content:null},
-            {title:'层次 & 阴影',content:null},
-            {title:'最近更新',content:null},
-        ]
-    },
+    system,
     
     {
         title:'动效',
