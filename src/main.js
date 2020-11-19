@@ -1,13 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import '@/style/_index.scss'
-import ArticleContent from './components/ArticleContent.vue'
-import AliIcon from './components/AliIcon.vue'
-
+import * as components from './components/_index'
+import {group as demo} from './views/demo/_index'
 
 const app =  createApp(App)
-app.component('ArticleContent',ArticleContent)
-app.component('AliIcon',AliIcon)
 
+components.install(app)
+demo.install(app)
 
 app.mount('#app')
