@@ -9,6 +9,9 @@ import FlexFixed from "./flex/FlexFixed.vue";
 
 import DemoView from "./demo/DemoView.vue";
 
+
+import PInput from "./common/PInput.vue";
+
 export const install = (app)=>{
     [
         [ArticleContent,'ArticleContent'],
@@ -17,7 +20,8 @@ export const install = (app)=>{
         [FlexRow,'FlexRow'],
         [FlexFill,'FlexFill'],
         [FlexFixed,'FlexFixed'],
-        [DemoView,'DemoView']
+        [DemoView,'DemoView'],
+        [PInput,'PInput']
     ].forEach((([comp,name ])=> app.component(name,comp)))
     return app
 }
