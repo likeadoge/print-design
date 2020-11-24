@@ -1,0 +1,58 @@
+// Colors
+$red: #fa5662;
+$blue: #3d6ade;
+$blue-bright: #1e9ae9;
+
+$gray-light-0: #f5f7fa;
+$gray-light-1: #f3f5f9;
+$gray-light-2: #e7eaf2;
+
+$gray: #909399;
+
+$gray-dark-0: #101725;
+$gray-dark-1: #333;
+$gray-dark-2: #5d6676;
+
+$white: #fff;
+$black: #000;
+
+$theme-color: $blue;
+$theme-color-light: $blue-bright;
+
+$bg-color: $white;
+
+// line-height
+$line-height-base: 1.5;
+
+// border-radius
+$border-radius-base: 2px;
+$border-radius-lg: $border-radius-base * 2;
+
+// font
+$font-size-base: 14px;
+$font-color: $gray-dark-1;
+$font-family-base: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, PingFang SC, Arial, Microsoft YaHei,
+    Source Han Sans SC, sans-serif;
+
+// title
+$title-line-height: $line-height-base - 0.1;
+$title-font-color: $gray-dark-0;
+$title-font-size-base : $font-size-base + 2px;
+
+// link
+$link-color: $theme-color;
+$link-hover-color: $theme-color-light;
+
+// content
+$content-width: 1280px;
+$content-width-min: 1200px;
+
+// header
+$header-height: 78px;
+
+//Responsive layout
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
