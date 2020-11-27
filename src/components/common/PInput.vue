@@ -12,26 +12,26 @@
 </template>
 
 <script>
+
+import {ref,computed } from 'vue'
+
+
+
 export default {
-  data: () => ({
-    value: "dsa",
-    isFocused: false,
-  }),
 
-  computed: {
-    mode() {
-      return this.isFocused || this.value ? "input" : "blank";
-    },
-  },
+  setup(){
+    const value = ref('')
+    const isFocused = ref(false)
+    const mode = computed(()=>isFocused.value || value.value ? "input":"blank")
 
-  methods: {
-    focus() {
-      this.isFocused = true;
-    },
-    blur() {
-      this.isFocused = false;
-    },
-  },
+    const focus = ()=> isFocused.value = true
+    const blur = ()=> isFocused.value = false
+  
+    return {
+      value,isFocused,mode,blur,focus
+    }
+  }
+
 };
 </script>
 
